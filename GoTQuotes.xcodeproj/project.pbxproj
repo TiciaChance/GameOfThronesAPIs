@@ -14,6 +14,7 @@
 		1175D9101D7E395600C7C296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1175D90E1D7E395600C7C296 /* LaunchScreen.storyboard */; };
 		1175D91B1D7E395700C7C296 /* GoTQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175D91A1D7E395700C7C296 /* GoTQuotesTests.swift */; };
 		1175D9261D7E395700C7C296 /* GoTQuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175D9251D7E395700C7C296 /* GoTQuotesUITests.swift */; };
+		C2C8FA8E7EC3EFB5B46FD70C /* Pods_GoTQuotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521B88FE690A7F586E67A317 /* Pods_GoTQuotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,9 @@
 		1175D9211D7E395700C7C296 /* GoTQuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoTQuotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1175D9251D7E395700C7C296 /* GoTQuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoTQuotesUITests.swift; sourceTree = "<group>"; };
 		1175D9271D7E395700C7C296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C8EF4A69FEF35FD04EEE519 /* Pods-GoTQuotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTQuotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoTQuotes/Pods-GoTQuotes.release.xcconfig"; sourceTree = "<group>"; };
+		521B88FE690A7F586E67A317 /* Pods_GoTQuotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoTQuotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F47A4A72E40E4505ADB54099 /* Pods-GoTQuotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoTQuotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoTQuotes/Pods-GoTQuotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C8FA8E7EC3EFB5B46FD70C /* Pods_GoTQuotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +86,8 @@
 				1175D9191D7E395700C7C296 /* GoTQuotesTests */,
 				1175D9241D7E395700C7C296 /* GoTQuotesUITests */,
 				1175D9031D7E395600C7C296 /* Products */,
+				39F75DDCCF82CBF4F18FE72B /* Pods */,
+				6E8052E0734FDB504A6BAFD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,23 @@
 			path = GoTQuotesUITests;
 			sourceTree = "<group>";
 		};
+		39F75DDCCF82CBF4F18FE72B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F47A4A72E40E4505ADB54099 /* Pods-GoTQuotes.debug.xcconfig */,
+				1C8EF4A69FEF35FD04EEE519 /* Pods-GoTQuotes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E8052E0734FDB504A6BAFD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521B88FE690A7F586E67A317 /* Pods_GoTQuotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1175D92A1D7E395700C7C296 /* Build configuration list for PBXNativeTarget "GoTQuotes" */;
 			buildPhases = (
+				4AB2FE8EF720DCCEDCE3CF1B /* [CP] Check Pods Manifest.lock */,
 				1175D8FE1D7E395600C7C296 /* Sources */,
 				1175D8FF1D7E395600C7C296 /* Frameworks */,
 				1175D9001D7E395600C7C296 /* Resources */,
+				BCC75E275A15B76E9C55E9B4 /* [CP] Embed Pods Frameworks */,
+				0F58B8AE070D611F4827E6DD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F58B8AE070D611F4827E6DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoTQuotes/Pods-GoTQuotes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AB2FE8EF720DCCEDCE3CF1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BCC75E275A15B76E9C55E9B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoTQuotes/Pods-GoTQuotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1175D8FE1D7E395600C7C296 /* Sources */ = {
@@ -399,6 +474,7 @@
 		};
 		1175D92B1D7E395700C7C296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F47A4A72E40E4505ADB54099 /* Pods-GoTQuotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoTQuotes/Info.plist;
@@ -410,6 +486,7 @@
 		};
 		1175D92C1D7E395700C7C296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C8EF4A69FEF35FD04EEE519 /* Pods-GoTQuotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = GoTQuotes/Info.plist;
@@ -484,6 +561,7 @@
 				1175D92C1D7E395700C7C296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1175D92D1D7E395700C7C296 /* Build configuration list for PBXNativeTarget "GoTQuotesTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +570,7 @@
 				1175D92F1D7E395700C7C296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1175D9301D7E395700C7C296 /* Build configuration list for PBXNativeTarget "GoTQuotesUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +579,7 @@
 				1175D9321D7E395700C7C296 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
