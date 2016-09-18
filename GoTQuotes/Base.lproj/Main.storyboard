@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,22 +20,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aqc-Kw-1WW" userLabel="QuoteView">
-                                <rect key="frame" x="67" y="270" width="240" height="128"/>
+                                <frame key="frameInset" minX="67" minY="270" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcT-1v-Yn4">
-                                        <rect key="frame" x="16" y="0.0" width="209" height="81"/>
+                                        <frame key="frameInset" minX="16" width="209" height="81"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMu-qJ-h6M" userLabel="Character Label">
-                                        <rect key="frame" x="99" y="89" width="42" height="21"/>
+                                        <frame key="frameInset" minX="99" minY="89" width="42" height="21"/>
                                         <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="RcT-1v-Yn4" firstAttribute="centerX" secondItem="Aqc-Kw-1WW" secondAttribute="centerX" id="0fR-BQ-vv6"/>
                                     <constraint firstItem="nMu-qJ-h6M" firstAttribute="top" secondItem="RcT-1v-Yn4" secondAttribute="bottom" id="Ek7-m7-RXS"/>
@@ -47,7 +48,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Aqc-Kw-1WW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="CXU-1c-TPv"/>
                             <constraint firstItem="Aqc-Kw-1WW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JMY-dY-Urq"/>
@@ -55,12 +56,10 @@
                             <constraint firstItem="Aqc-Kw-1WW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hZb-Wt-L7u"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="characterLabel" destination="nMu-qJ-h6M" id="bfh-JF-Uvv"/>
                         <outlet property="quoteLabel" destination="RcT-1v-Yn4" id="eZy-xk-mKF"/>
-                        <outlet property="quoteView" destination="Aqc-Kw-1WW" id="vT1-4j-1xS"/>
-                        <outlet property="viewForQuotes" destination="Aqc-Kw-1WW" id="Gcu-WG-5xe"/>
+                        <outlet property="quoteView" destination="Aqc-Kw-1WW" id="XKR-Lu-prq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
