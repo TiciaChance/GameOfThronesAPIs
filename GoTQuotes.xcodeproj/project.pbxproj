@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110B14DC1D8EEFBC006FF143 /* FZCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B14DB1D8EEFBC006FF143 /* FZCarousel.m */; };
+		110B14DE1D8EF021006FF143 /* FZCarouselCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 110B14DD1D8EF021006FF143 /* FZCarouselCollectionViewDelegate.m */; };
 		1175D9061D7E395600C7C296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175D9051D7E395600C7C296 /* AppDelegate.swift */; };
 		1175D9081D7E395600C7C296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175D9071D7E395600C7C296 /* ViewController.swift */; };
 		1175D90B1D7E395600C7C296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1175D9091D7E395600C7C296 /* Main.storyboard */; };
@@ -35,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110B14D91D8EEF71006FF143 /* FZCarousel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZCarousel.h; sourceTree = "<group>"; };
+		110B14DA1D8EEFBB006FF143 /* GoTQuotes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoTQuotes-Bridging-Header.h"; sourceTree = "<group>"; };
+		110B14DB1D8EEFBC006FF143 /* FZCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZCarousel.m; sourceTree = "<group>"; };
+		110B14DD1D8EF021006FF143 /* FZCarouselCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZCarouselCollectionViewDelegate.m; sourceTree = "<group>"; };
+		110B14E01D8EF048006FF143 /* FZCarouselCollectionViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FZCarouselCollectionViewDelegate.h; path = ../FZCarouselCollectionViewDelegate.h; sourceTree = "<group>"; };
 		1175D9021D7E395600C7C296 /* GoTQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoTQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1175D9051D7E395600C7C296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1175D9071D7E395600C7C296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,10 +113,15 @@
 			children = (
 				1175D9051D7E395600C7C296 /* AppDelegate.swift */,
 				1175D9071D7E395600C7C296 /* ViewController.swift */,
+				110B14D91D8EEF71006FF143 /* FZCarousel.h */,
+				110B14DB1D8EEFBC006FF143 /* FZCarousel.m */,
+				110B14E01D8EF048006FF143 /* FZCarouselCollectionViewDelegate.h */,
+				110B14DD1D8EF021006FF143 /* FZCarouselCollectionViewDelegate.m */,
 				1175D9091D7E395600C7C296 /* Main.storyboard */,
 				1175D90C1D7E395600C7C296 /* Assets.xcassets */,
 				1175D90E1D7E395600C7C296 /* LaunchScreen.storyboard */,
 				1175D9111D7E395600C7C296 /* Info.plist */,
+				110B14DA1D8EEFBB006FF143 /* GoTQuotes-Bridging-Header.h */,
 			);
 			path = GoTQuotes;
 			sourceTree = "<group>";
@@ -335,6 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1175D9081D7E395600C7C296 /* ViewController.swift in Sources */,
+				110B14DE1D8EF021006FF143 /* FZCarouselCollectionViewDelegate.m in Sources */,
+				110B14DC1D8EEFBC006FF143 /* FZCarousel.m in Sources */,
 				1175D9061D7E395600C7C296 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,10 +500,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoTQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricchance.GoTQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoTQuotes/GoTQuotes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -500,10 +517,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GoTQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricchance.GoTQuotes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoTQuotes/GoTQuotes-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
